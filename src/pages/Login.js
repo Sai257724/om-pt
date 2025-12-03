@@ -27,7 +27,7 @@ export default function Login() {
     setError(null);
     setLoading(true);
     try {
-      // call context login (mock); replace with API in production
+    
       await login(form);
       // navigate to dashboard after successful login
       navigate("/dashboard");
