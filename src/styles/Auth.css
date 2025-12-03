@@ -1,0 +1,158 @@
+/* Full-screen dark background */
+.auth-wrapper {
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #020617; /* dark grey / blue-black */
+  padding: 16px;
+}
+
+/* Narrow mobile-like card */
+.auth-card {
+  width: 100%;
+  max-width: 420px;
+  background-color: #020617;
+  border-radius: 16px;
+  padding: 20px 18px 28px;
+  box-shadow: 0 18px 40px rgba(0, 0, 0, 0.7);
+}
+
+/* Title + subtitle */
+.auth-title {
+  color: #f9fafb;
+  font-size: 20px;
+  margin-bottom: 4px;
+  text-align: center;
+}
+
+.auth-subtitle {
+  color: #9ca3af;
+  font-size: 12px;
+  text-align: center;
+  margin-bottom: 18px;
+}
+
+/* Form */
+.auth-form {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+/* Labels */
+.auth-label {
+  color: #9ca3af;
+  font-size: 12px;
+  margin-bottom: 4px;
+}
+
+/* Inputs + selects */
+.auth-input {
+  width: 100%;
+  padding: 11px 13px;
+  border-radius: 10px;
+  border: 1px solid #111827;
+  background-color: #031519; /* dark grey / military green feel */
+  color: #e5e7eb;
+  font-size: 14px;
+  outline: none;
+  transition: border 0.12s ease, box-shadow 0.12s ease;
+}
+
+.auth-input::placeholder {
+  color: #6b7280;
+}
+
+.auth-input:focus {
+  border-color: #22c55e;
+  box-shadow: 0 0 0 1px rgba(34, 197, 94, 0.4);
+  background-color: #020c10;
+}
+
+/* Textarea for shop address */
+.auth-textarea {
+  resize: vertical;
+  min-height: 70px;
+}
+
+/* Button (green) */
+.auth-button {
+  width: 100%;
+  margin-top: 8px;
+  padding: 11px 13px;
+  border-radius: 10px;
+  border: none;
+  background-color: #22c55e;
+  color: #022c22;
+  font-weight: 600;
+  font-size: 15px;
+  cursor: pointer;
+  transition: background-color 0.12s ease, transform 0.05s ease;
+}
+
+.auth-button:hover {
+  background-color: #16a34a;
+}
+
+.auth-button:active {
+  transform: scale(0.98);
+}
+
+/* Bottom text */
+.auth-footer-text {
+  margin-top: 14px;
+  font-size: 12px;
+  color: #6b7280;
+  text-align: center;
+}
+
+.auth-link {
+  color: #22c55e;
+  cursor: pointer;
+}
+
+.auth-link:hover {
+  text-decoration: underline;
+}
+
+/* For conditional section headings */
+.auth-section-title {
+  margin-top: 6px;
+  margin-bottom: 4px;
+  font-size: 12px;
+  color: #9ca3af;
+}
+
+/* Small screens */
+@media (max-width: 480px) {
+  .auth-card {
+    padding: 18px 14px 24px;
+  }
+}
+/* Password Wrapper */
+.auth-password-wrapper {
+  position: relative;
+  width: 100%;
+}
+
+/* Eye icon inside password input */
+.auth-eye-icon {
+  position: absolute;
+  right: 12px;
+  top: 50%;
+  transform: translateY(-50%);
+  font-size: 16px;
+  cursor: pointer;
+  color: #6b7280;
+}
+
+.auth-eye-icon:hover {
+  color: #22c55e;
+}
+.auth-error {
+  color: #c53030;
+  margin: 8px 0;
+  font-size: 0.9rem;
+}
+
